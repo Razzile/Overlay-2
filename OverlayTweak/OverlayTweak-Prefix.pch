@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'OverlayTweak' target in the 'OverlayTweak' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

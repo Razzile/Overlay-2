@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F23401DA1B9C35F30058F9E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23401D91B9C35F30058F9E7 /* Foundation.framework */; };
+		F23401F11B9C36410058F9E7 /* Overlay.h in Headers */ = {isa = PBXBuildFile; fileRef = F23401EF1B9C36410058F9E7 /* Overlay.h */; };
+		F23401F21B9C36410058F9E7 /* Overlay.m in Sources */ = {isa = PBXBuildFile; fileRef = F23401F01B9C36410058F9E7 /* Overlay.m */; };
+		F23401F41B9C36690058F9E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23401F31B9C36690058F9E7 /* UIKit.framework */; };
+		F23401F61B9C367B0058F9E7 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F23401F51B9C367B0058F9E7 /* libsubstrate.dylib */; };
+		F23402001B9C3D110058F9E7 /* Coordinate.h in Headers */ = {isa = PBXBuildFile; fileRef = F23401F71B9C3D110058F9E7 /* Coordinate.h */; };
+		F23402011B9C3D110058F9E7 /* Coordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = F23401F81B9C3D110058F9E7 /* Coordinate.m */; };
+		F23402021B9C3D110058F9E7 /* FancyTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F23401F91B9C3D110058F9E7 /* FancyTabBar.h */; };
+		F23402031B9C3D110058F9E7 /* FancyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F23401FA1B9C3D110058F9E7 /* FancyTabBar.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F23402041B9C3D110058F9E7 /* FancyTabBarDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F23401FB1B9C3D110058F9E7 /* FancyTabBarDelegate.h */; };
+		F23402051B9C3D110058F9E7 /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = F23401FC1B9C3D110058F9E7 /* UIImage+ImageEffects.h */; };
+		F23402061B9C3D110058F9E7 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = F23401FD1B9C3D110058F9E7 /* UIImage+ImageEffects.m */; };
+		F23402071B9C3D110058F9E7 /* UIView+Screenshot.h in Headers */ = {isa = PBXBuildFile; fileRef = F23401FE1B9C3D110058F9E7 /* UIView+Screenshot.h */; };
+		F23402081B9C3D110058F9E7 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = F23401FF1B9C3D110058F9E7 /* UIView+Screenshot.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F23401D61B9C35F30058F9E7 /* OverlayTweak.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = OverlayTweak.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23401D91B9C35F30058F9E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F23401DE1B9C35F30058F9E7 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		F23401DF1B9C35F30058F9E7 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		F23401E11B9C35F30058F9E7 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		F23401E21B9C35F30058F9E7 /* OverlayTweak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OverlayTweak-Prefix.pch"; sourceTree = "<group>"; };
+		F23401E91B9C35F30058F9E7 /* OverlayTweak.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = OverlayTweak.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/OverlayTweak.plist; sourceTree = "<group>"; };
+		F23401EF1B9C36410058F9E7 /* Overlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Overlay.h; sourceTree = "<group>"; };
+		F23401F01B9C36410058F9E7 /* Overlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Overlay.m; sourceTree = "<group>"; };
+		F23401F31B9C36690058F9E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F23401F51B9C367B0058F9E7 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		F23401F71B9C3D110058F9E7 /* Coordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Coordinate.h; path = ../../../FancyTabBar/FancyTabBar/Coordinate.h; sourceTree = "<group>"; };
+		F23401F81B9C3D110058F9E7 /* Coordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Coordinate.m; path = ../../../FancyTabBar/FancyTabBar/Coordinate.m; sourceTree = "<group>"; };
+		F23401F91B9C3D110058F9E7 /* FancyTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FancyTabBar.h; path = ../../../FancyTabBar/FancyTabBar/FancyTabBar.h; sourceTree = "<group>"; };
+		F23401FA1B9C3D110058F9E7 /* FancyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FancyTabBar.m; path = ../../../FancyTabBar/FancyTabBar/FancyTabBar.m; sourceTree = "<group>"; };
+		F23401FB1B9C3D110058F9E7 /* FancyTabBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FancyTabBarDelegate.h; path = ../../../FancyTabBar/FancyTabBar/FancyTabBarDelegate.h; sourceTree = "<group>"; };
+		F23401FC1B9C3D110058F9E7 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "../../../FancyTabBar/FancyTabBar/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		F23401FD1B9C3D110058F9E7 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "../../../FancyTabBar/FancyTabBar/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		F23401FE1B9C3D110058F9E7 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Screenshot.h"; path = "../../../FancyTabBar/FancyTabBar/UIView+Screenshot.h"; sourceTree = "<group>"; };
+		F23401FF1B9C3D110058F9E7 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Screenshot.m"; path = "../../../FancyTabBar/FancyTabBar/UIView+Screenshot.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F23401D21B9C35F30058F9E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23401F61B9C367B0058F9E7 /* libsubstrate.dylib in Frameworks */,
+				F23401F41B9C36690058F9E7 /* UIKit.framework in Frameworks */,
+				F23401DA1B9C35F30058F9E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F23401CB1B9C35F30058F9E7 = {
+			isa = PBXGroup;
+			children = (
+				F23401DB1B9C35F30058F9E7 /* OverlayTweak */,
+				F23401D81B9C35F30058F9E7 /* Frameworks */,
+				F23401D71B9C35F30058F9E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F23401D71B9C35F30058F9E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F23401D61B9C35F30058F9E7 /* OverlayTweak.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F23401D81B9C35F30058F9E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F23401F51B9C367B0058F9E7 /* libsubstrate.dylib */,
+				F23401F31B9C36690058F9E7 /* UIKit.framework */,
+				F23401D91B9C35F30058F9E7 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F23401DB1B9C35F30058F9E7 /* OverlayTweak */ = {
+			isa = PBXGroup;
+			children = (
+				F23401EF1B9C36410058F9E7 /* Overlay.h */,
+				F23401F01B9C36410058F9E7 /* Overlay.m */,
+				F23401F71B9C3D110058F9E7 /* Coordinate.h */,
+				F23401F81B9C3D110058F9E7 /* Coordinate.m */,
+				F23401F91B9C3D110058F9E7 /* FancyTabBar.h */,
+				F23401FA1B9C3D110058F9E7 /* FancyTabBar.m */,
+				F23401FB1B9C3D110058F9E7 /* FancyTabBarDelegate.h */,
+				F23401FC1B9C3D110058F9E7 /* UIImage+ImageEffects.h */,
+				F23401FD1B9C3D110058F9E7 /* UIImage+ImageEffects.m */,
+				F23401FE1B9C3D110058F9E7 /* UIView+Screenshot.h */,
+				F23401FF1B9C3D110058F9E7 /* UIView+Screenshot.m */,
+				F23401DC1B9C35F30058F9E7 /* Package */,
+				F23401E01B9C35F30058F9E7 /* Supporting Files */,
+			);
+			path = OverlayTweak;
+			sourceTree = "<group>";
+		};
+		F23401DC1B9C35F30058F9E7 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				F23401DD1B9C35F30058F9E7 /* DEBIAN */,
+				F23401E61B9C35F30058F9E7 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		F23401DD1B9C35F30058F9E7 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				F23401DE1B9C35F30058F9E7 /* control.txt */,
+				F23401DF1B9C35F30058F9E7 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		F23401E01B9C35F30058F9E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F23401E11B9C35F30058F9E7 /* PackageVersion.plist */,
+				F23401E21B9C35F30058F9E7 /* OverlayTweak-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F23401E61B9C35F30058F9E7 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F23401E71B9C35F30058F9E7 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		F23401E71B9C35F30058F9E7 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				F23401E81B9C35F30058F9E7 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		F23401E81B9C35F30058F9E7 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				F23401E91B9C35F30058F9E7 /* OverlayTweak.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F23401D31B9C35F30058F9E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23402001B9C3D110058F9E7 /* Coordinate.h in Headers */,
+				F23402071B9C3D110058F9E7 /* UIView+Screenshot.h in Headers */,
+				F23402051B9C3D110058F9E7 /* UIImage+ImageEffects.h in Headers */,
+				F23402021B9C3D110058F9E7 /* FancyTabBar.h in Headers */,
+				F23401F11B9C36410058F9E7 /* Overlay.h in Headers */,
+				F23402041B9C3D110058F9E7 /* FancyTabBarDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F23401D51B9C35F30058F9E7 /* OverlayTweak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23401EC1B9C35F30058F9E7 /* Build configuration list for PBXNativeTarget "OverlayTweak" */;
+			buildPhases = (
+				F23401D01B9C35F30058F9E7 /* ShellScript */,
+				F23401D11B9C35F30058F9E7 /* Sources */,
+				F23401D21B9C35F30058F9E7 /* Frameworks */,
+				F23401D31B9C35F30058F9E7 /* Headers */,
+				F23401D41B9C35F30058F9E7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OverlayTweak;
+			productName = OverlayTweak;
+			productReference = F23401D61B9C35F30058F9E7 /* OverlayTweak.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F23401CC1B9C35F30058F9E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				TargetAttributes = {
+					F23401D51B9C35F30058F9E7 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = F23401CF1B9C35F30058F9E7 /* Build configuration list for PBXProject "OverlayTweak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F23401CB1B9C35F30058F9E7;
+			productRefGroup = F23401D71B9C35F30058F9E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F23401D51B9C35F30058F9E7 /* OverlayTweak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F23401D01B9C35F30058F9E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		F23401D41B9C35F30058F9E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F23401D11B9C35F30058F9E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23402061B9C3D110058F9E7 /* UIImage+ImageEffects.m in Sources */,
+				F23401F21B9C36410058F9E7 /* Overlay.m in Sources */,
+				F23402031B9C3D110058F9E7 /* FancyTabBar.m in Sources */,
+				F23402011B9C3D110058F9E7 /* Coordinate.m in Sources */,
+				F23402081B9C3D110058F9E7 /* UIView+Screenshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F23401EA1B9C35F30058F9E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		F23401EB1B9C35F30058F9E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		F23401ED1B9C35F30058F9E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OverlayTweak/OverlayTweak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		F23401EE1B9C35F30058F9E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OverlayTweak/OverlayTweak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F23401CF1B9C35F30058F9E7 /* Build configuration list for PBXProject "OverlayTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23401EA1B9C35F30058F9E7 /* Debug */,
+				F23401EB1B9C35F30058F9E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23401EC1B9C35F30058F9E7 /* Build configuration list for PBXNativeTarget "OverlayTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23401ED1B9C35F30058F9E7 /* Debug */,
+				F23401EE1B9C35F30058F9E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F23401CC1B9C35F30058F9E7 /* Project object */;
+}
